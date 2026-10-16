@@ -1,0 +1,50 @@
+{
+  "judge_model": "google/gemini-3.6-flash",
+  "candidate": "smol_lora",
+  "baseline": "smol_base",
+  "n_pairs": 24,
+  "n_judged": 24,
+  "n_failed": 0,
+  "failure_rate": 0.0,
+  "wins": 8,
+  "losses": 14,
+  "ties": 2,
+  "unknown": 0,
+  "win_rate_excl_ties": 0.3636,
+  "win_rate_ties_half": 0.375,
+  "by_category": {
+    "coding": {
+      "wins": 3,
+      "losses": 3,
+      "ties": 0,
+      "unknown": 0,
+      "win_rate_excl_ties": 0.5,
+      "win_rate_ties_half": 0.5
+    },
+    "cooking": {
+      "wins": 1,
+      "losses": 5,
+      "ties": 0,
+      "unknown": 0,
+      "win_rate_excl_ties": 0.1667,
+      "win_rate_ties_half": 0.1667
+    },
+    "general_help": {
+      "wins": 2,
+      "losses": 3,
+      "ties": 1,
+      "unknown": 0,
+      "win_rate_excl_ties": 0.4,
+      "win_rate_ties_half": 0.4167
+    },
+    "safety_sensitive": {
+      "wins": 2,
+      "losses": 3,
+      "ties": 1,
+      "unknown": 0,
+      "win_rate_excl_ties": 0.4,
+      "win_rate_ties_half": 0.4167
+    }
+  },
+  "judge_calls_this_run": 5
+}

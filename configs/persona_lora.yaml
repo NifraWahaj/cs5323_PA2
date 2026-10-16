@@ -1,0 +1,21 @@
+# Task 5: TRL DPOTrainer + LoRA on the Ramsay persona pairs
+model: HuggingFaceTB/SmolLM2-360M-Instruct
+data_path: data/persona_lora/ramsay_style_preferences.json
+val_rows: 20                    # held out from the 220 rows for eval rewards/accuracies
+seed: 532
+# LoRA: rank 16 on every attention + MLP projection. Style lives in what the model
+# says *and* how it phrases it, so MLP layers are included, not just q/v.
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_targets: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+beta: 0.1
+lr: 5.0e-5                      # LoRA tolerates ~10-50x full-FT DPO learning rates
+schedule: cosine
+warmup_frac: 0.1
+per_device_batch: 4
+grad_accum: 2                   # effective 8 -> 25 steps/epoch on 200 rows
+epochs: 3
+max_length: 512
+max_prompt_length: 256
+output_dir: /kaggle/working/outputs/persona_lora

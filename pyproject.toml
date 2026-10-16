@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sproutlm"
+version = "0.1.0"
+description = "Hand-rolled SFT + DPO for Qwen2.5-0.5B (CS532 PA2)."
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+packages = ["sproutlm"]

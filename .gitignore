@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.venv/
+outputs/
+*.zip
+.pytest_cache/
+.DS_Store
+
+# local-only: duplicates, superseded runs, starter docs
+judge_inputs/
+docs/
+runs/kaggle_executed/04_judge.executed.ipynb
+runs/kaggle_executed/04_judge.log
+report/*.pdf
+report/*.aux
+report/*.log
+*.egg-info/
+report/*
+!report/PA2_25280002.pdf

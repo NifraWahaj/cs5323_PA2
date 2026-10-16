@@ -1,0 +1,13 @@
+{
+ "model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+ "adapter": null,
+ "style": "chat_template",
+ "decode": {
+  "do_sample": false,
+  "max_new_tokens": 384,
+  "repetition_penalty": 1.1,
+  "no_repeat_ngram_size": 0
+ },
+ "n": 24,
+ "minutes": 0.57
+}

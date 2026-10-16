@@ -1,0 +1,5 @@
+{
+  "versionNumber": 1,
+  "name": "sprout-pairwise-judge",
+  "definition": "@kbench.task(name=\"sprout-pairwise-judge\")\ndef sprout_judge(llm):\n    ask = lambda prompt: str(llm.prompt(prompt, temperature=0))\n    for name in PAIR_FILES:\n        src = E / f\"{name}_pairs.jsonl\"\n        if src.exists():\n            print(f\"\\n===== {name} =====\")\n            judge.run(src, E / f\"{name}_judged.jsonl\", ask, JUDGE,\n                      batch_size=5, sleep_seconds=5, max_retries=3, reuse=True)\n"
+}

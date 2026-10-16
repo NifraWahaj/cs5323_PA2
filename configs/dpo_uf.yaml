@@ -1,0 +1,22 @@
+# DPO on UltraFeedback (binarized, single-turn)
+sft_checkpoint: /kaggle/input/sprout-sft/outputs/sft/best   # attach the SFT notebook output
+dataset: ultrafeedback
+train_pairs: 15000
+val_pairs: 1000
+seed: 532
+max_length: 512
+max_prompt_length: 256
+per_device_batch: 1
+effective_batch: 32
+beta: 0.1
+lr: 1.0e-6
+schedule: constant
+warmup_frac: 0.0
+optimizer: rmsprop
+grad_clip: 1.0
+gradient_checkpointing: true
+eval_batch: 1                   # 1 pair = 2 stacked rows next to fp32 policy + optimizer
+eval_every: 60
+log_every: 5
+time_budget_minutes: 600
+output_dir: /kaggle/working/outputs/dpo_uf

@@ -1,0 +1,17 @@
+{
+  "judge_model": "google/gemini-3.6-flash",
+  "candidate": "dpo_uf",
+  "baseline": "sft",
+  "n_pairs": 300,
+  "n_judged": 300,
+  "n_failed": 0,
+  "failure_rate": 0.0,
+  "wins": 146,
+  "losses": 134,
+  "ties": 20,
+  "unknown": 0,
+  "win_rate_excl_ties": 0.5214,
+  "win_rate_ties_half": 0.52,
+  "by_category": {},
+  "judge_calls_this_run": 60
+}

@@ -1,0 +1,20 @@
+# SFT: Qwen2.5-0.5B base -> instruction follower (guide recipe, adjusted only where noted)
+model: Qwen/Qwen2.5-0.5B
+dataset: ultrachat              # HuggingFaceH4/ultrachat_200k, first exchange only
+train_examples: 30000
+val_examples: 1000
+seed: 532
+max_length: 512
+per_device_batch: 2
+effective_batch: 32             # accumulation = 32 / (2 * n_gpus)
+lr: 2.0e-5
+schedule: cosine
+warmup_frac: 0.03
+weight_decay: 0.1
+grad_clip: 1.0
+gradient_checkpointing: true
+eval_batch: 2                   # 151k-vocab logits: keep eval small (OOM at 8)
+eval_every: 100
+log_every: 10
+time_budget_minutes: 600
+output_dir: /kaggle/working/outputs/sft

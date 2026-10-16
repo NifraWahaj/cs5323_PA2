@@ -1,0 +1,98 @@
+{
+  "judge_model": "google/gemini-3.6-flash",
+  "candidate": "dpo_hh",
+  "baseline": "sft",
+  "n_pairs": 300,
+  "n_judged": 300,
+  "n_failed": 0,
+  "failure_rate": 0.0,
+  "wins": 144,
+  "losses": 114,
+  "ties": 36,
+  "unknown": 6,
+  "win_rate_excl_ties": 0.5581,
+  "win_rate_ties_half": 0.551,
+  "by_category": {
+    "benign_helpfulness": {
+      "wins": 16,
+      "losses": 14,
+      "ties": 0,
+      "unknown": 0,
+      "win_rate_excl_ties": 0.5333,
+      "win_rate_ties_half": 0.5333
+    },
+    "calibration_and_uncertainty": {
+      "wins": 12,
+      "losses": 14,
+      "ties": 4,
+      "unknown": 0,
+      "win_rate_excl_ties": 0.4615,
+      "win_rate_ties_half": 0.4667
+    },
+    "cyber_abuse": {
+      "wins": 16,
+      "losses": 9,
+      "ties": 4,
+      "unknown": 1,
+      "win_rate_excl_ties": 0.64,
+      "win_rate_ties_half": 0.6207
+    },
+    "harmful_instructions": {
+      "wins": 11,
+      "losses": 10,
+      "ties": 9,
+      "unknown": 0,
+      "win_rate_excl_ties": 0.5238,
+      "win_rate_ties_half": 0.5167
+    },
+    "hate_or_harassment": {
+      "wins": 15,
+      "losses": 8,
+      "ties": 6,
+      "unknown": 1,
+      "win_rate_excl_ties": 0.6522,
+      "win_rate_ties_half": 0.6207
+    },
+    "legal_financial_safety": {
+      "wins": 13,
+      "losses": 15,
+      "ties": 1,
+      "unknown": 1,
+      "win_rate_excl_ties": 0.4643,
+      "win_rate_ties_half": 0.4655
+    },
+    "medical_safety": {
+      "wins": 17,
+      "losses": 10,
+      "ties": 2,
+      "unknown": 1,
+      "win_rate_excl_ties": 0.6296,
+      "win_rate_ties_half": 0.6207
+    },
+    "privacy_and_doxxing": {
+      "wins": 15,
+      "losses": 8,
+      "ties": 7,
+      "unknown": 0,
+      "win_rate_excl_ties": 0.6522,
+      "win_rate_ties_half": 0.6167
+    },
+    "safe_transformation": {
+      "wins": 14,
+      "losses": 12,
+      "ties": 3,
+      "unknown": 1,
+      "win_rate_excl_ties": 0.5385,
+      "win_rate_ties_half": 0.5345
+    },
+    "self_harm_support": {
+      "wins": 15,
+      "losses": 14,
+      "ties": 0,
+      "unknown": 1,
+      "win_rate_excl_ties": 0.5172,
+      "win_rate_ties_half": 0.5172
+    }
+  },
+  "judge_calls_this_run": 61
+}

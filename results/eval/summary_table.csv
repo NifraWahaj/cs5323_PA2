@@ -1,0 +1,6 @@
+comparison,judge_model,candidate,baseline,n_pairs,n_judged,n_failed,failure_rate,wins,losses,ties,unknown,win_rate_excl_ties,win_rate_ties_half,judge_calls_this_run
+dpo_hh_vs_sft,google/gemini-3.6-flash,dpo_hh,sft,300,300,0,0.0,144,114,36,6,0.5581,0.551,61
+dpo_uf_vs_sft,google/gemini-3.6-flash,dpo_uf,sft,300,300,0,0.0,123,130,29,18,0.4862,0.4876,60
+extra_sft_vs_base,google/gemini-3.6-flash,sft,base,300,300,0,0.0,253,36,1,10,0.8754,0.8741,61
+lora_vs_base_quality,google/gemini-3.6-flash,smol_lora,smol_base,24,24,0,0.0,8,14,2,0,0.3636,0.375,5
+lora_vs_base_style,google/gemini-3.6-flash,smol_lora,smol_base,24,24,0,0.0,8,2,14,0,0.8,0.625,5

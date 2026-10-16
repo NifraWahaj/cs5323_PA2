@@ -1,0 +1,13 @@
+{
+ "model": "/kaggle/input/notebooks/nifraw/02notebookgenai/outputs/dpo_uf/best",
+ "adapter": null,
+ "style": "sprout",
+ "decode": {
+  "do_sample": false,
+  "max_new_tokens": 384,
+  "repetition_penalty": 1.1,
+  "no_repeat_ngram_size": 0
+ },
+ "n": 300,
+ "minutes": 4.25
+}

@@ -1,0 +1,305 @@
+0.7s 1 {"status":"BOUND","bound_ip":"34.74.220.15","bound_time":"2026-10-16T04:10:22Z","effective_expire_time":"2026-10-16T16:10:22Z"}
+5.5s 2 code: /kaggle/input/notebooks/nifraw/03notebookgenai/outputs/code/sproutlm
+5.5s 3 eval dir: /kaggle/working/outputs/eval
+5.5s 4 ['dpo_hh_vs_sft_pairs.jsonl', 'dpo_uf_vs_sft_pairs.jsonl', 'extra_sft_vs_base_pairs.jsonl', 'lora_vs_base_quality_pairs.jsonl', 'lora_vs_base_style_pairs.jsonl']
+12.0s 5 ready
+15.2s 6 isolation probe -> none
+15.2s 7 
+15.2s 8 ===== dpo_uf_vs_sft =====
+15.2s 9 [sprout-judge] 300 pairs, 0 already judged, 300 to go
+33.7s 10 judged 5/300
+49.4s 11 judged 10/300
+62.6s 12 judged 15/300
+76.3s 13 judged 20/300
+94.0s 14 judged 25/300
+104.8s 15 judged 30/300
+119.0s 16 judged 35/300
+130.4s 17 judged 40/300
+149.3s 18 judged 45/300
+164.2s 19 judged 50/300
+176.4s 20 judged 55/300
+192.3s 21 judged 60/300
+205.8s 22 judged 65/300
+220.4s 23 judged 70/300
+237.1s 24 judged 75/300
+250.5s 25 judged 80/300
+265.6s 26 judged 85/300
+282.9s 27 judged 90/300
+300.5s 28 judged 95/300
+316.9s 29 judged 100/300
+331.8s 30 judged 105/300
+347.5s 31 judged 110/300
+361.7s 32 judged 115/300
+377.1s 33 judged 120/300
+389.2s 34 judged 125/300
+403.9s 35 judged 130/300
+417.5s 36 judged 135/300
+430.3s 37 judged 140/300
+445.5s 38 judged 145/300
+462.4s 39 judged 150/300
+484.7s 40 judged 155/300
+499.7s 41 judged 160/300
+515.0s 42 judged 165/300
+530.8s 43 judged 170/300
+545.1s 44 judged 175/300
+557.2s 45 judged 180/300
+577.0s 46 judged 185/300
+591.8s 47 judged 190/300
+605.7s 48 judged 195/300
+620.5s 49 judged 200/300
+636.0s 50 judged 205/300
+652.5s 51 judged 210/300
+672.0s 52 judged 215/300
+687.5s 53 judged 220/300
+702.8s 54 judged 225/300
+716.4s 55 judged 230/300
+730.0s 56 judged 235/300
+747.3s 57 judged 240/300
+767.1s 58 judged 245/300
+783.3s 59 judged 250/300
+799.8s 60 judged 255/300
+820.9s 61 judged 260/300
+836.6s 62 judged 265/300
+850.6s 63 judged 270/300
+863.8s 64 judged 275/300
+877.2s 65 judged 280/300
+892.0s 66 judged 285/300
+904.9s 67 judged 290/300
+919.5s 68 judged 295/300
+936.2s 69 judged 300/300
+936.3s 70 {
+936.3s 71 "judge_model": "google/gemini-3.6-flash",
+936.3s 72 "candidate": "dpo_uf",
+936.3s 73 "baseline": "sft",
+936.3s 74 "n_pairs": 300,
+936.3s 75 "n_judged": 300,
+936.3s 76 "n_failed": 0,
+936.3s 77 "failure_rate": 0.0,
+936.3s 78 "wins": 123,
+936.3s 79 "losses": 130,
+936.3s 80 "ties": 29,
+936.3s 81 "unknown": 18,
+936.3s 82 "win_rate_excl_ties": 0.4862,
+936.3s 83 "win_rate_ties_half": 0.4876,
+936.3s 84 "judge_calls_this_run": 60
+936.3s 85 }
+936.3s 86 
+936.3s 87 ===== dpo_hh_vs_sft =====
+936.3s 88 [sprout-judge] 300 pairs, 0 already judged, 300 to go
+947.7s 89 judged 5/300
+959.9s 90 judged 10/300
+977.9s 91 judged 15/300
+991.8s 92 judged 20/300
+1007.3s 93 judged 25/300
+1018.9s 94 judged 30/300
+1033.3s 95 judged 35/300
+1049.2s 96 judged 40/300
+1062.4s 97 judged 45/300
+1076.7s 98 judged 50/300
+1090.0s 99 judged 55/300
+1105.6s 100 judged 60/300
+1121.3s 101 judged 65/300
+1133.9s 102 judged 70/300
+1146.7s 103 judged 75/300
+1152.2s 104 batch 15 attempt 1 failed: ValueError: no JSON array in judge reply
+1174.3s 105 judged 80/300
+1185.2s 106 judged 85/300
+1199.8s 107 judged 90/300
+1211.0s 108 judged 95/300
+1225.6s 109 judged 100/300
+1240.4s 110 judged 105/300
+1254.0s 111 judged 110/300
+1267.9s 112 judged 115/300
+1280.9s 113 judged 120/300
+1293.2s 114 judged 125/300
+1304.2s 115 judged 130/300
+1316.5s 116 judged 135/300
+1332.7s 117 judged 140/300
+1344.6s 118 judged 145/300
+1357.7s 119 judged 150/300
+1373.0s 120 judged 155/300
+1389.1s 121 judged 160/300
+1401.0s 122 judged 165/300
+1413.2s 123 judged 170/300
+1424.9s 124 judged 175/300
+1441.4s 125 judged 180/300
+1454.2s 126 judged 185/300
+1468.0s 127 judged 190/300
+1479.7s 128 judged 195/300
+1494.3s 129 judged 200/300
+1509.8s 130 judged 205/300
+1521.5s 131 judged 210/300
+1532.8s 132 judged 215/300
+1544.8s 133 judged 220/300
+1561.2s 134 judged 225/300
+1577.1s 135 judged 230/300
+1588.4s 136 judged 235/300
+1601.5s 137 judged 240/300
+1615.4s 138 judged 245/300
+1626.3s 139 judged 250/300
+1641.5s 140 judged 255/300
+1655.7s 141 judged 260/300
+1669.2s 142 judged 265/300
+1680.4s 143 judged 270/300
+1694.2s 144 judged 275/300
+1707.4s 145 judged 280/300
+1720.0s 146 judged 285/300
+1729.8s 147 judged 290/300
+1742.1s 148 judged 295/300
+1758.0s 149 judged 300/300
+1758.0s 150 {
+1758.0s 151 "judge_model": "google/gemini-3.6-flash",
+1758.0s 152 "candidate": "dpo_hh",
+1758.0s 153 "baseline": "sft",
+1758.0s 154 "n_pairs": 300,
+1758.0s 155 "n_judged": 300,
+1758.0s 156 "n_failed": 0,
+1758.0s 157 "failure_rate": 0.0,
+1758.0s 158 "wins": 144,
+1758.0s 159 "losses": 114,
+1758.0s 160 "ties": 36,
+1758.0s 161 "unknown": 6,
+1758.0s 162 "win_rate_excl_ties": 0.5581,
+1758.0s 163 "win_rate_ties_half": 0.551,
+1758.0s 164 "judge_calls_this_run": 61
+1758.0s 165 }
+1758.0s 166 
+1758.0s 167 ===== lora_vs_base_style =====
+1758.0s 168 [sprout-judge] 24 pairs, 0 already judged, 24 to go
+1774.4s 169 judged 5/24
+1785.8s 170 judged 10/24
+1798.8s 171 judged 15/24
+1813.3s 172 judged 20/24
+1827.1s 173 judged 24/24
+1827.1s 174 {
+1827.1s 175 "judge_model": "google/gemini-3.6-flash",
+1827.1s 176 "candidate": "smol_lora",
+1827.1s 177 "baseline": "smol_base",
+1827.1s 178 "n_pairs": 24,
+1827.1s 179 "n_judged": 24,
+1827.1s 180 "n_failed": 0,
+1827.1s 181 "failure_rate": 0.0,
+1827.1s 182 "wins": 8,
+1827.1s 183 "losses": 2,
+1827.1s 184 "ties": 14,
+1827.1s 185 "unknown": 0,
+1827.1s 186 "win_rate_excl_ties": 0.8,
+1827.1s 187 "win_rate_ties_half": 0.625,
+1827.1s 188 "judge_calls_this_run": 5
+1827.1s 189 }
+1827.1s 190 
+1827.1s 191 ===== lora_vs_base_quality =====
+1827.1s 192 [sprout-judge] 24 pairs, 0 already judged, 24 to go
+1841.9s 193 judged 5/24
+1855.9s 194 judged 10/24
+1868.5s 195 judged 15/24
+1881.4s 196 judged 20/24
+1892.9s 197 judged 24/24
+1892.9s 198 {
+1892.9s 199 "judge_model": "google/gemini-3.6-flash",
+1892.9s 200 "candidate": "smol_lora",
+1892.9s 201 "baseline": "smol_base",
+1892.9s 202 "n_pairs": 24,
+1892.9s 203 "n_judged": 24,
+1892.9s 204 "n_failed": 0,
+1892.9s 205 "failure_rate": 0.0,
+1892.9s 206 "wins": 8,
+1892.9s 207 "losses": 14,
+1892.9s 208 "ties": 2,
+1892.9s 209 "unknown": 0,
+1892.9s 210 "win_rate_excl_ties": 0.3636,
+1892.9s 211 "win_rate_ties_half": 0.375,
+1892.9s 212 "judge_calls_this_run": 5
+1892.9s 213 }
+1892.9s 214 
+1892.9s 215 ===== extra_sft_vs_base =====
+1892.9s 216 [sprout-judge] 300 pairs, 0 already judged, 300 to go
+1906.5s 217 judged 5/300
+1918.3s 218 judged 10/300
+1932.9s 219 judged 15/300
+1947.5s 220 judged 20/300
+1957.9s 221 judged 25/300
+1969.9s 222 judged 30/300
+1981.0s 223 judged 35/300
+1992.4s 224 judged 40/300
+2004.1s 225 judged 45/300
+2019.2s 226 judged 50/300
+2030.5s 227 judged 55/300
+2045.3s 228 judged 60/300
+2059.9s 229 judged 65/300
+2066.9s 230 batch 13 attempt 1 failed: JSONDecodeError: Expecting ',' delimiter: line 2 column 160 (char 161)
+2087.4s 231 judged 70/300
+2102.4s 232 judged 75/300
+2111.7s 233 judged 80/300
+2127.5s 234 judged 85/300
+2138.2s 235 judged 90/300
+2155.6s 236 judged 95/300
+2169.1s 237 judged 100/300
+2180.1s 238 judged 105/300
+2199.3s 239 judged 110/300
+2213.6s 240 judged 115/300
+2226.5s 241 judged 120/300
+2241.2s 242 judged 125/300
+2255.2s 243 judged 130/300
+2270.5s 244 judged 135/300
+2284.2s 245 judged 140/300
+2300.3s 246 judged 145/300
+2312.5s 247 judged 150/300
+2325.7s 248 judged 155/300
+2338.5s 249 judged 160/300
+2353.4s 250 judged 165/300
+2366.6s 251 judged 170/300
+2379.0s 252 judged 175/300
+2395.1s 253 judged 180/300
+2409.2s 254 judged 185/300
+2419.9s 255 judged 190/300
+2434.0s 256 judged 195/300
+2445.6s 257 judged 200/300
+2456.9s 258 judged 205/300
+2477.9s 259 judged 210/300
+2490.6s 260 judged 215/300
+2504.5s 261 judged 220/300
+2517.7s 262 judged 225/300
+2534.5s 263 judged 230/300
+2543.2s 264 judged 235/300
+2556.2s 265 judged 240/300
+2568.7s 266 judged 245/300
+2580.5s 267 judged 250/300
+2594.7s 268 judged 255/300
+2609.5s 269 judged 260/300
+2621.4s 270 judged 265/300
+2635.4s 271 judged 270/300
+2645.3s 272 judged 275/300
+2657.0s 273 judged 280/300
+2669.3s 274 judged 285/300
+2678.5s 275 judged 290/300
+2691.1s 276 judged 295/300
+2708.1s 277 judged 300/300
+2708.3s 278 {
+2708.3s 279 "judge_model": "google/gemini-3.6-flash",
+2708.3s 280 "candidate": "sft",
+2708.3s 281 "baseline": "base",
+2708.3s 282 "n_pairs": 300,
+2708.3s 283 "n_judged": 300,
+2708.3s 284 "n_failed": 0,
+2708.3s 285 "failure_rate": 0.0,
+2708.3s 286 "wins": 253,
+2708.3s 287 "losses": 36,
+2708.3s 288 "ties": 1,
+2708.3s 289 "unknown": 10,
+2708.3s 290 "win_rate_excl_ties": 0.8754,
+2708.3s 291 "win_rate_ties_half": 0.8741,
+2708.3s 292 "judge_calls_this_run": 61
+2708.3s 293 }
+2753.8s 294 ['dpo_hh_vs_sft_judged.jsonl', 'dpo_hh_vs_sft_judged.summary.json', 'dpo_hh_vs_sft_pairs.jsonl', 'dpo_uf_vs_sft_judged.jsonl', 'dpo_uf_vs_sft_judged.summary.json', 'dpo_uf_vs_sft_pairs.jsonl', 'extra_sft_vs_base_judged.jsonl', 'extra_sft_vs_base_judged.summary.json', 'extra_sft_vs_base_pairs.jsonl', 'lora_vs_base_quality_judged.jsonl', 'lora_vs_base_quality_judged.summary.json', 'lora_vs_base_quality_pairs.jsonl', 'lora_vs_base_style_judged.jsonl', 'lora_vs_base_style_judged.summary.json', 'lora_vs_base_style_pairs.jsonl', 'summary_table.csv']
+2755.3s 295 /usr/bin/sh: 1: zip: not found
+2761.9s 296 /benchmarks/.venv/lib/python3.12/site-packages/traitlets/traitlets.py:2930: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+2761.9s 297 warn(
+2761.9s 298 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+2762.6s 299 [NbConvertApp] Writing 15363644 bytes to __notebook__.ipynb
+2765.7s 300 /benchmarks/.venv/lib/python3.12/site-packages/traitlets/traitlets.py:2930: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+2765.7s 301 warn(
+2765.7s 302 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+2767.0s 303 /benchmarks/.venv/share/jupyter/nbconvert/templates/base/display_priority.j2:32: UserWarning: Your element with mimetype(s) dict_keys([]) is not able to be represented.
+2767.0s 304 {%- elif type == 'text/vnd.mermaid' -%}
+2767.2s 305 [NbConvertApp] Writing 12320493 bytes to __results__.html
