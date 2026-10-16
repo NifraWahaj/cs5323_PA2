@@ -3,20 +3,36 @@
 Nifra Wahaj (25280002)
 
 - **Report:** [report/PA2_25280002.pdf](report/PA2_25280002.pdf)
-- **Evaluation summary (DPO vs SFT):** [results/eval/summary_table.csv](results/eval/summary_table.csv), with per-comparison details in `results/eval/*_judged.summary.json`
-- **Training plots:** [SFT](results/plots/sft.png), [DPO-HH](results/plots/dpo_hh.png), [DPO-UF](results/plots/dpo_uf.png)
+- **Evaluation summary (DPO vs SFT):** [table below](#evaluation-summary) · [results/eval/summary_table.csv](results/eval/summary_table.csv)
+- **Training plots:** [shown below](#training-plots) · [SFT](results/plots/sft.png), [DPO-HH](results/plots/dpo_hh.png), [DPO-UF](results/plots/dpo_uf.png)
 
-## Findings
+## Evaluation summary
 
-Judge: `google/gemini-3.6-flash`, blind A/B. Win rate excludes ties.
+Judge: `google/gemini-3.6-flash`, blind A/B, every call in a fresh chat. Win rates exclude ties; "Unknown" means the judge left the item out of its reply. Source: [results/eval/summary_table.csv](results/eval/summary_table.csv).
 
-| Comparison | Eval set | Win / Tie / Loss | Win rate |
-|---|---|---|---|
-| SFT vs base | AlpacaEval 300 | 253 / 1 / 36 | 87.5% |
-| DPO-HH vs SFT | HH safety 300 | 144 / 36 / 114 | 55.8% (p = 0.07) |
-| DPO-UF vs SFT | AlpacaEval 300 | 123 / 29 / 130 | 48.6% |
-| LoRA persona vs SmolLM2, style | Persona 24 | 8 / 14 / 2 | 80.0% |
-| LoRA persona vs SmolLM2, quality | Persona 24 | 8 / 2 / 14 | 36.4% |
+| Comparison | Eval set | n | Win | Tie | Loss | Unknown | Failed | Win rate | Win rate (tie = ½) |
+|---|---|---|---|---|---|---|---|---|---|
+| DPO-HH vs SFT | HH safety | 300 | 144 | 36 | 114 | 6 | 0 | **55.8%** | 55.1% |
+| DPO-UF vs SFT | AlpacaEval | 300 | 123 | 29 | 130 | 18 | 0 | **48.6%** | 48.8% |
+| SFT vs base (extra) | AlpacaEval | 300 | 253 | 1 | 36 | 10 | 0 | **87.5%** | 87.4% |
+| LoRA vs SmolLM2, style | Persona | 24 | 8 | 14 | 2 | 0 | 0 | **80.0%** | 62.5% |
+| LoRA vs SmolLM2, quality | Persona | 24 | 8 | 2 | 14 | 0 | 0 | **36.4%** | 37.5% |
+
+Per-comparison details, including the HH per-category breakdown, are in [`results/eval/*_judged.summary.json`](results/eval/).
+
+## Training plots
+
+**SFT** ([results/plots/sft.png](results/plots/sft.png))
+
+<img src="results/plots/sft.png" width="480">
+
+**DPO-HH** ([results/plots/dpo_hh.png](results/plots/dpo_hh.png))
+
+![DPO-HH training curves](results/plots/dpo_hh.png)
+
+**DPO-UF** ([results/plots/dpo_uf.png](results/plots/dpo_uf.png))
+
+![DPO-UF training curves](results/plots/dpo_uf.png)
 
 ## Layout
 
